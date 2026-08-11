@@ -110,4 +110,4 @@ npm run preview
 
 可以扫描网站中的微信二维码，添加时备注 **“项目合作”**。新产品从 0 到 1、旧系统升级、AI 能力落地，都可以先从一次直接沟通开始。
 
-<img title="" src="https://649021252.github.io/cgj/wechat-qr2.jpg" alt="项目合作微信二维码" data-align="right">
+<img title="" src="https://649021252.github.io/cgj/wechat-qr.jpg" alt="项目合作微信二维码" data-align="right">
