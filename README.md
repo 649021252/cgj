@@ -1,38 +1,45 @@
 # 曹国军｜数字产品作品集
 
-面向客户推广与项目合作的响应式作品展示站，包含作品筛选、项目详情、能力介绍、合作流程、个人介绍及微信联系入口。
+可直接自动部署到 GitHub Pages 的 React + Vite 静态网站，包含完整作品展示、分类筛选、项目详情、合作介绍和微信二维码。
 
-## 本地直接运行
+## 本地运行
 
-环境要求：Node.js 22.13 或更高版本。
+需要 Node.js 22 或更高版本：
 
 ```bash
 npm install
 npm run dev
 ```
 
-浏览器访问终端提示的网址（通常为 `http://localhost:5173`），即可查看完整网站。Windows、macOS 和 Linux 均可使用以上命令。
-
-## 生产构建
+生产构建：
 
 ```bash
 npm run build
-npm run start
+npm run preview
 ```
 
-## 上传 GitHub
+## GitHub Pages 自动部署
 
-将整个工程提交到 GitHub 仓库即可保留完整源码。克隆仓库后执行“本地直接运行”中的命令便可渲染网站。
+工程已包含 `.github/workflows/deploy-pages.yml`。代码推送到 `main` 或 `master` 后会自动构建并发布。
 
-> 本工程采用 Vinext/React，不支持直接双击 `index.html` 运行。GitHub 仓库只负责保存源码；若要生成任何人可访问的网址，需要继续部署到支持 Node.js 或 Cloudflare Worker 的托管平台。
+首次发布仅需设置一次：
 
-## 主要目录
+1. 打开仓库的 `Settings` → `Pages`。
+2. 在 `Build and deployment` 的 `Source` 中选择 `GitHub Actions`。
+3. 推送代码后打开 `Actions`，等待 `Deploy GitHub Pages` 显示绿色对勾。
 
-- `app/page.tsx`：页面内容和交互
-- `app/globals.css`：页面样式与响应式适配
-- `public/wechat-qr.jpg`：关于我区域的微信二维码
-- `public/`：网站静态资源
+仓库为 `649021252/cgj` 时，访问地址为：
 
-## 技术栈
+https://649021252.github.io/cgj/
 
-React 19、TypeScript、Vinext、Vite。
+## 提交代码
+
+把本压缩包内容放到仓库根目录，再执行：
+
+```bash
+git add -A
+git commit -m "发布数字产品作品集并配置 GitHub Pages"
+git push origin main
+```
+
+如果默认分支是 `master`，最后一条改为 `git push origin master`。
