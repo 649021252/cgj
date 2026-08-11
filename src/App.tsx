@@ -71,7 +71,7 @@ export default function Home() {
 
   return <main>
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="返回首页"><span className="brand-mark">CG</span><span><b>数字产品实验室</b><small>DIGITAL PRODUCT STUDIO</small></span></a>
+      <a className="brand" href="#top" aria-label="返回首页"><span className="brand-mark">CG</span><span><b>曹国军 · 数字产品实验室</b><small>AI APPLICATION ARCHITECT · PRODUCT STUDIO</small></span></a>
       <nav className={mobileOpen ? "open" : ""} aria-label="主导航">
         <a href="#works" onClick={() => setMobileOpen(false)}>精选作品</a><a href="#capability" onClick={() => setMobileOpen(false)}>核心能力</a><a href="#process" onClick={() => setMobileOpen(false)}>合作流程</a><a href="#about" onClick={() => setMobileOpen(false)}>关于我</a>
       </nav>
@@ -82,11 +82,12 @@ export default function Home() {
     <section className="hero" id="top">
       <div className="hero-grid" /><div className="hero-glow one" /><div className="hero-glow two" />
       <div className="hero-content">
+        <div className="availability"><i /> 2026 · 可承接产品咨询与项目合作</div>
         <p className="eyebrow"><span /> 企业级产品设计 · 全链路交互 · AI工程化</p>
-        <h1>把复杂业务，打造为<br /><em>真正可落地的数字产品</em></h1>
+        <h1>把复杂业务，打造为<br /><em>真正可落地的</em><br className="hero-break" />数字产品</h1>
         <p className="hero-lead">近二十年企业级软件研发与架构实践，聚焦 AI 应用、产业互联网、智慧服务与数字化平台，从业务梳理到产品落地，交付可演示、可迭代、可增长的完整解决方案。</p>
         <div className="hero-actions"><button className="primary-btn" onClick={goWorks}>浏览精选作品 <ArrowIcon /></button><a className="text-btn" href="#capability"><span>▶</span> 了解交付能力</a></div>
-        <div className="hero-proof"><div><strong>18<sup>+</sup></strong><span>年行业经验</span></div><i /><div><strong>30<sup>+</sup></strong><span>产品与解决方案</span></div><i /><div><strong>12<sup>+</sup></strong><span>行业场景沉淀</span></div></div>
+        <div className="hero-proof"><div><strong>近20<sup>年</sup></strong><span>企业级研发与架构实践</span></div><i /><div><strong>30<sup>+</sup></strong><span>产品与解决方案</span></div><i /><div><strong>12<sup>+</sup></strong><span>行业场景沉淀</span></div></div>
       </div>
       <div className="hero-showcase" aria-label="代表项目预览">
         <div className="orbit orbit-1" /><div className="orbit orbit-2" />
@@ -97,7 +98,17 @@ export default function Home() {
       <div className="scroll-hint"><span>SCROLL TO EXPLORE</span><i /></div>
     </section>
 
-    <section className="logo-strip"><span>覆盖多元行业场景</span><div><b>AI智能应用</b><b>产业互联网</b><b>社区服务</b><b>运动娱乐</b><b>循环经济</b><b>零售商业</b></div></section>
+    <section className="logo-strip"><span>长期聚焦</span><div><b>AI智能应用</b><b>企业级平台</b><b>产业互联网</b><b>智慧城市</b><b>IoT云边协同</b><b>数字孪生</b></div></section>
+
+    <section className="achievement-strip" aria-label="核心成果与交付能力">
+      <div className="achievement-title"><span>PROVEN DELIVERY</span><strong>经验不止于年限，更体现在复杂项目的落地能力</strong></div>
+      <div className="achievement-items">
+        <article><b>0→1</b><span>复杂平台规划与建设</span><small>从业务建模到产品交付</small></article>
+        <article><b>万级</b><span>IoT 设备接入实践</span><small>协议、边缘与云端协同</small></article>
+        <article><b>97%+</b><span>RAG 引用准确率</span><small>证据约束与可追溯问答</small></article>
+        <article><b>多端</b><span>产品全链路协同</span><small>PC · H5 · 小程序 · 管理端</small></article>
+      </div>
+    </section>
 
     <section className="works section" id="works">
       <div className="section-heading"><div><p className="section-no">01 / SELECTED WORKS</p><h2>精选产品作品</h2><p>不是静态概念稿，而是围绕真实业务链路打造的高完成度交互产品。</p></div><span className="work-count"><b>{String(filtered.length).padStart(2,"0")}</b> 个作品</span></div>
@@ -129,7 +140,7 @@ export default function Home() {
 
     <section className="about section" id="about"><div className="about-card"><div className="about-copy"><p className="section-no">04 / ABOUT &amp; COOPERATION</p><h2>懂技术，更懂产品如何<br />创造真实业务价值</h2><p>我是一名 AI 应用架构师与企业级平台架构师，长期深耕金融科技、工业互联网、物联网、智慧城市与行业数字化。擅长把复杂技术能力转化为用户看得懂、业务用得上、团队接得住的数字产品。</p><div className="about-tags"><span>Java / Python</span><span>AI Agent</span><span>RAG / MCP</span><span>微服务架构</span><span>IoT 云边协同</span></div><div className="cooperation-copy"><span>有项目想法或同类方案需求？</span><strong>添加微信，详聊项目需求</strong><p>新产品从 0 到 1、现有系统升级、AI 能力融入业务，都可以先从一次直接沟通开始。</p></div></div><div className="about-side"><div className="about-quote"><span>“</span><blockquote>好的数字产品，不是功能的堆砌，而是让复杂业务变得清晰、可信且高效。</blockquote><small>PRODUCT PHILOSOPHY</small></div><div className="wechat-card"><img src={`${import.meta.env.BASE_URL}wechat-qr.jpg`} alt="奋斗人生微信二维码" /><div><small>PROJECT COOPERATION</small><strong>微信扫码，详聊需求</strong><span>添加时请备注“项目合作”<br />期待了解你的产品想法</span></div></div></div></div></section>
 
-    <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">CG</span><span><b>数字产品实验室</b><small>DIGITAL PRODUCT STUDIO</small></span></a><p>专注企业数字化产品、AI应用与产业互联网解决方案</p><div><a href="#works">作品</a><a href="#capability">能力</a><a href="#process">流程</a><a href="#about">微信合作</a></div><small>© 2026 CAO GUOJUN. ALL RIGHTS RESERVED.</small></footer>
+    <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">CG</span><span><b>曹国军 · 数字产品实验室</b><small>AI APPLICATION ARCHITECT · PRODUCT STUDIO</small></span></a><p>专注企业数字化产品、AI 应用与产业互联网解决方案</p><div><a href="#works">作品</a><a href="#capability">能力</a><a href="#process">流程</a><a href="#about">微信合作</a></div><small>© 2026 CAO GUOJUN · BUILT FOR REAL-WORLD IMPACT.</small></footer>
 
     {selected && <div className="modal-backdrop" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && setSelected(null)}><section className="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button className="modal-close" aria-label="关闭详情" onClick={() => setSelected(null)}>×</button><ProjectVisual project={selected} /><div className="modal-body"><p className="modal-kicker">PROJECT CASE · {String(selected.id).padStart(2,"0")}</p><h2 id="modal-title">{selected.title}</h2><p className="modal-overview">{selected.overview}</p><div className="modal-metrics">{selected.metrics.map(([v,l]) => <div key={l}><b>{v}</b><span>{l}</span></div>)}</div><h3>核心能力与交付范围</h3><ul className="highlight-list">{selected.highlights.map(x => <li key={x}><span><CheckIcon /></span>{x}</li>)}</ul><div className="modal-footer"><div><small>参考投入</small><b>{selected.price}</b><span> · {selected.cycle}</span></div><button className="primary-btn" onClick={() => startContact(selected)}>微信详聊方案 <ArrowIcon /></button></div></div></section></div>}
   </main>;
