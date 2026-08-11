@@ -100,20 +100,14 @@ npm run preview
 2. 在 `Build and deployment` 的 `Source` 中选择 `GitHub Actions`。
 3. 推送代码并打开 `Actions`，等待 `Deploy GitHub Pages` 执行成功。
 
----
-
-**CG 数字产品实验室** · 专注企业数字化产品、AI 应用与产业互联网解决方案
-
-合作方式
+## CG 数字产品实验室  · 专注企业数字化产品、AI 应用与产业互联网解决方案
 
 如果你正在寻找一套可以快速启动的行业方案，或手上已有需求却不知道怎样变成完整产品，欢迎访问作品站并选择感兴趣的系统进一步沟通。
 
 **在线浏览：** [https://649021252.github.io/cgj/](https://649021252.github.io/cgj/)
 
-
-
-### 扫码沟通项目
+## 扫码沟通项目
 
 可以扫描网站中的微信二维码，添加时备注 **“项目合作”**。新产品从 0 到 1、旧系统升级、AI 能力落地，都可以先从一次直接沟通开始。
 
-<img src="https://649021252.github.io/cgj/wechat-qr.jpg" title="" alt="项目合作微信二维码" data-align="center">
+<img title="" src="https://649021252.github.io/cgj/wechat-qr.jpg" alt="项目合作微信二维码" data-align="right">
